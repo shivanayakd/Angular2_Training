@@ -1,0 +1,10 @@
+<div class="container">
+<app-todo [childtodo]="_parenttodo" (updatedtodo)="fromchild($event)"></app-todo>
+<br/>
+<ul class="list-group" *ngFor="let do of defaulttodo">
+  <li class="list-group-item justify-content-between">
+    {{ do }}
+    <span class="badge badge-default badge-pill"><i class="fa fa-pencil-square-o" aria-hidden="true" (click)="updateMe(do)"></i><i class="fa fa-times" aria-hidden="true" (click)="deleteMe(do)"></i></span>
+  </li>
+ </ul>
+</div>

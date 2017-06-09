@@ -1,0 +1,9 @@
+<label for="exampleInputEmail1"><i class="fa fa-plus-square fa-2x" aria-hidden="true" (click)="showme()"></i></label>
+<form *ngIf="showform">
+  <div class="form-group">
+    
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Todo" [(ngModel)]="childtodo" name="test">
+  </div>
+  <button type="submit" class="btn btn-primary" (click)="sendUpdate()">Submit</button>
+</form>
+

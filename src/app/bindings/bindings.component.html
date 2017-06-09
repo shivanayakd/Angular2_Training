@@ -1,0 +1,14 @@
+<p>
+  bindings works!
+</p>
+
+<p (click)="showEvent($event)"> Click Event</p>
+
+<p (dblclick)="showEvent($event)"> Double Click Event</p>
+
+<p (mouseover)="showEvent($event)"> Mouse Over</p>
+<p (mouseout)="showEvent($event)"> Mouse out</p>
+
+<input type="text" (keyup)="showEvent($event)">
+<input type="text" (keydown)="showEvent($event)">
+<input type="text" (keypress)="showEvent($event)">

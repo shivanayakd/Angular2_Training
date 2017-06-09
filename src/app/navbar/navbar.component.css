@@ -1,0 +1,19 @@
+ul {
+    background-color: #1976D2;
+    height: 29px;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+ul li a {
+     text-decoration: none;
+     padding: 5px;
+     font-size: 10px;
+     color: #fff;
+     transition: 0.4s;
+}
+
+ul li:hover a{
+    background-color: #5696d6;
+}

@@ -1,0 +1,41 @@
+<p>
+  directives works!
+</p>
+
+<button class="btn-danger">My Bootstrap button </button>
+<br/>
+<br/>
+<!--<input type="text" [value]="modeltest" (input)="takeInp($event)"> -->
+
+<input type="text" [(ngModel)]="modeltest">
+
+<p> {{ modeltest }} </p>
+
+<!--
+<p [class]="cls1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio quisquam dicta voluptatum earum tempore sequi unde omnis delectus libero voluptate, incidunt atque nisi officiis eveniet, animi iure sunt est?</p>
+
+<h1 [class.test2]="bol">test boolean</h1>
+
+<p [ngClass]="clsarr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum numquam hic facilis adipisci voluptatum in fugiat inventore, ullam voluptate, est accusamus, a officia iste nam sunt repellat. Eius, ipsum rem?</p>-->
+
+<!--<p [ngClass]="multicl">test multi class</p>
+
+<p [style.color]="bol2 ? 'red' : 'green'"> Testing ng Style</p>
+
+<p [ngStyle]="stylete">Ng Style test 2</p>
+
+<div *ngIf="bol">
+  <button (click)="changeSwit('one')">one</button>
+  <button (click)="changeSwit('two')">two</button>
+  <button (click)="changeSwit('three')">three</button>
+  <button (click)="changeSwit('four')">four</button>
+
+  <div [ngSwitch]="swit">
+    <p *ngSwitchCase="'one'">One</p>
+    <p *ngSwitchCase="'two'">Two</p>
+    <p *ngSwitchCase="'three'">Three</p>
+    <p *ngSwitchCase="'four'">Four</p>
+    <p *ngDefaultCase>Hello i am Default</p>
+  </div>
+</div>
+-->

@@ -1,0 +1,15 @@
+table {
+    width: 70%;
+    margin: 15px auto;
+    border: 1px solid #ccc;
+}
+
+tr th,tr td {
+    border: 1px solid #ccc;
+    padding: 3px;
+    text-align: center;
+}
+
+table tr:nth-child(even) {
+    background-color: #ccc;
+}
