@@ -1,5 +1,5 @@
 <label for="exampleInputEmail1"><i class="fa fa-plus-square fa-2x" aria-hidden="true" (click)="showme()"></i></label>
-<form *ngIf="showform">
+<form *ngIf="showform || childtodo">
   <div class="form-group">
     
     <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Todo" [(ngModel)]="childtodo" name="test">

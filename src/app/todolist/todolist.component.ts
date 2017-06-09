@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class TodolistComponent implements OnInit {
 
   _parenttodo : any;
-  // _selecteddo : any;
 
   defaulttodo = [
     'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
@@ -24,18 +23,22 @@ export class TodolistComponent implements OnInit {
   }
 
 fromchild ( eve ) {
-  if(this.defaulttodo.indexOf(this._parenttodo) > 0){
+  // if(this.defaulttodo.indexOf(this._parenttodo) > 0){
+  //   this.defaulttodo.splice(this.defaulttodo.indexOf(this._parenttodo),1,eve);
+  // }
+
+  if(this.defaulttodo.indexOf(this._parenttodo) != -1){
     this.defaulttodo.splice(this.defaulttodo.indexOf(this._parenttodo),1,eve);
   }
-  else {
+    else {
     this.defaulttodo.push(eve);
   }
-  console.log(eve);
+  console.log('updated value----------'+eve);
   
 }
 
   updateMe ( va ) {
-    console.log(va);
+    console.log( 'yet to update------------'+va);
     this._parenttodo = va;
   }
   constructor() { }
