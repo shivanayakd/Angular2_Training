@@ -7,9 +7,14 @@
 <br/>
 <!--<input type="text" [value]="modeltest" (input)="takeInp($event)"> -->
 
-<input type="text" [(ngModel)]="modeltest">
+<!--<input type="text" [(ngModel)]="modeltest">-->
 
-<p> {{ modeltest }} </p>
+<p> {{ modeltest | uppercase }} </p>
+
+<h3> {{ da | date: 'dd/MM/yyyy hh:mm:ss'}}</h3>
+
+<h3> {{ val | currency: USD:true }} </h3>
+
 
 <!--
 <p [class]="cls1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio quisquam dicta voluptatum earum tempore sequi unde omnis delectus libero voluptate, incidunt atque nisi officiis eveniet, animi iure sunt est?</p>

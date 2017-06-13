@@ -10,7 +10,10 @@ export class DirectivesComponent implements OnInit {
   bol2  = true;
   cls1 = 'test';
 
+  da = new Date('1990,02,02');
   modeltest = "I will be shown in text";
+
+  val = 550;
 
   bol = true;
 

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -12,6 +12,8 @@ import { DirectivesComponent } from './directives/directives.component';
 import { BindingsComponent } from './bindings/bindings.component';
 import { TodoComponent } from './todo/todo.component';
 import { TodolistComponent } from './todolist/todolist.component';
+import { MyformsComponent } from './myforms/myforms.component';
+import { MdfComponent } from './mdf/mdf.component';
 
 const myNav: Routes = [
   { path: 'home', component: AppComponent},
@@ -19,7 +21,9 @@ const myNav: Routes = [
   { path: 'arrcmp', component: ArraydataComponent},
   { path: 'dircmp', component: DirectivesComponent},
   { path: 'bindings', component: BindingsComponent},
-  { path: 'todo', component: TodolistComponent}
+  { path: 'todo', component: TodolistComponent},
+  { path: 'forms', component: MyformsComponent},
+  { path: 'mdf', component: MdfComponent}
 ];
 
 @NgModule({
@@ -31,12 +35,15 @@ const myNav: Routes = [
     DirectivesComponent,
     BindingsComponent,
     TodoComponent,
-    TodolistComponent
+    TodolistComponent,
+    MyformsComponent,
+    MdfComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(myNav)
   ],
   providers: [],
