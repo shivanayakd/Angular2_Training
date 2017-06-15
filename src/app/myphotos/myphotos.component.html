@@ -1,0 +1,18 @@
+<h2> {{ _errMsg }}</h2>
+<div class="container">
+  <h2>Image Gallery</h2>
+  <div class="row" *ngFor="let photo of _myphotos">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a [href]="photo.url" target="_blank">
+          <img [src]="photo.url" alt="Lights" style="width:100%">
+          <div class="caption">
+            <p>{{ photo.title }}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+  
+  </div>
+</div>

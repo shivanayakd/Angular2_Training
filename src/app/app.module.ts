@@ -14,6 +14,9 @@ import { TodoComponent } from './todo/todo.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import { MyformsComponent } from './myforms/myforms.component';
 import { MdfComponent } from './mdf/mdf.component';
+import { MyphotosComponent } from './myphotos/myphotos.component';
+
+import { MyphotoService } from './myphoto.service';
 
 const myNav: Routes = [
   { path: 'home', component: AppComponent},
@@ -23,7 +26,8 @@ const myNav: Routes = [
   { path: 'bindings', component: BindingsComponent},
   { path: 'todo', component: TodolistComponent},
   { path: 'forms', component: MyformsComponent},
-  { path: 'mdf', component: MdfComponent}
+  { path: 'mdf', component: MdfComponent},
+  { path: 'photos', component: MyphotosComponent}
 ];
 
 @NgModule({
@@ -37,7 +41,8 @@ const myNav: Routes = [
     TodoComponent,
     TodolistComponent,
     MyformsComponent,
-    MdfComponent
+    MdfComponent,
+    MyphotosComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +51,7 @@ const myNav: Routes = [
     ReactiveFormsModule,
     RouterModule.forRoot(myNav)
   ],
-  providers: [],
+  providers: [MyphotoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
