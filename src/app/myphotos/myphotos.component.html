@@ -1,18 +1,19 @@
 <h2> {{ _errMsg }}</h2>
-<div class="container">
+<div class="container" *ngIf="_myphotos; else loadingTemp">
   <h2>Image Gallery</h2>
-  <div class="row" *ngFor="let photo of _myphotos">
+  <div class="row" *ngFor="let photo of _myphotos; index as i">
     <div class="col-md-4">
       <div class="thumbnail">
         <a [href]="photo.url" target="_blank">
           <img [src]="photo.url" alt="Lights" style="width:100%">
           <div class="caption">
-            <p>{{ photo.title }}</p>
+            <p>{{i}}&nbsp;{{ photo.title }}</p>
           </div>
         </a>
       </div>
-    </div>
-    
-  
+    </div>  
   </div>
 </div>
+<ng-template #loadingTemp>
+  <h2>Loading data...</h2>
+</ng-template>

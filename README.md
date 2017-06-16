@@ -26,28 +26,3 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
-
-
-## Font Awesome installation 
-## In package.json file
-"font-awesome": "~4.7.0" 
-"angular2-fontawesome": "~0.9.0"
-
-## In angular-cli.json 
-{
-  "apps": [
-    {
-      "styles": [
-        "../node_modules/font-awesome/css/font-awesome.css"
-      ]
-    }
-  ],
-  "addons": [
-    "../node_modules/font-awesome/fonts/*.+(otf|eot|svg|ttf|woff|woff2)"
-  ]
-}
-
-## Email validation format
-[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$
-
-

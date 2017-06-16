@@ -9,13 +9,15 @@
 
 <!--<input type="text" [(ngModel)]="modeltest">-->
 
-<p> {{ modeltest | uppercase }} </p>
+<p> {{ modeltest | titlecase }} </p>
 
 <h3> {{ da | date: 'dd/MM/yyyy hh:mm:ss'}}</h3>
 
 <h3> {{ val | currency: USD:true }} </h3>
 
 
+<input type="range" min="5" max="500" [(ngModel)]="_range">
+<input type="text" [(ngModel)]="_range">   
 <!--
 <p [class]="cls1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odio quisquam dicta voluptatum earum tempore sequi unde omnis delectus libero voluptate, incidunt atque nisi officiis eveniet, animi iure sunt est?</p>
 

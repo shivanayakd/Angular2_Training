@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class DirectivesComponent implements OnInit {
     swit: string;
   bol2  = true;
+    _range = 20;
   cls1 = 'test';
 
   da = new Date('1990,02,02');

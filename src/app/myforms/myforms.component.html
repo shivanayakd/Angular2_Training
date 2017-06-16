@@ -1,6 +1,6 @@
 <div class="container">
   <div id="myform">  <h2>Template Driven Forms</h2>
-  <form #myForm="ngForm" (ngSubmit)="onsubmit(myForm)">
+  <form #myForm="ngForm" (ngSubmit)="onsubmit(myForm.value)">
     <div class="form-group">
       <label for="email">Email:</label>
       <input type="email" #refEmail="ngModel" minlength="5" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" class="form-control" id="email" placeholder="Enter email" name="email" [(ngModel)]="email">
